@@ -8,5 +8,8 @@ let fetchAdvice = async () => {
     advice.innerHTML = `"${data.slip.advice}"`;
 }
 
+let advice = document.getElementById("advice")
+advice = fetchAdvice()
+
 let btn = document.querySelector('.btn');
 btn.addEventListener('click', fetchAdvice);

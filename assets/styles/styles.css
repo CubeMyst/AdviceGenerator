@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  height: 85vh;
+  max-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  background: hsl(218deg, 23%, 16%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+* body .container {
+  background-color: hsl(217deg, 19%, 24%);
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  padding: 40px;
+  gap: 25px;
+  box-shadow: 9px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+* body .container #title {
+  color: hsl(150deg, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 0.8em;
+}
+* body .container #advice {
+  color: hsl(193deg, 38%, 86%);
+  font-size: 1.8em;
+}
+* body .container .btn {
+  background: hsl(150deg, 100%, 66%);
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -26px;
+}
+* body .container .btn .button {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+}
+* body .attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem;
+  color: hsl(193deg, 38%, 86%);
+  position: absolute;
+  bottom: 0;
+}
+* body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+  transition: color 0.3s ease-in-out;
+}
+* body .attribution a:hover {
+  color: hsl(228deg, 45%, 66%);
+}/*# sourceMappingURL=styles.css.map */

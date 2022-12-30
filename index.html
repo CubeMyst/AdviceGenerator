@@ -1,30 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- displays site properly based on user's device -->
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
         <title>Frontend Mentor | Advice generator app</title>
-        <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-        <link rel="stylesheet" href="assets/scss/styles.css">
+        <link rel="stylesheet" href="assets/styles/styles.css">
     </head>
 
     <body>
-        <div class="container">
-            <h1 id="title"></h1>
+        <main class="container">
+            <p id="title"></p>
             <p id="advice"></p>
             <picture>
-                <source media="(min-width: 768px)" srcset="assets/images/pattern-divider-desktop.svg">
-                <img src="assets/images/pattern-divider-mobile.svg" alt="">
+                <source media="(min-width: 800px)" srcset="assets/images/pattern-divider-desktop.svg">
+                <img src="assets/images/pattern-divider-mobile.svg">
             </picture>
             <div class="btn">
-                <button class="btn">
+                <button class="button">
                     <img src="assets/images/icon-dice.svg" alt="">
                 </button>
             </div>
-        </div>
+        </main>
 
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
@@ -32,5 +29,4 @@
         </div>
         <script src="assets/js/main.js" defer></script>
     </body>
-
 </html>
