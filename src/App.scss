@@ -1,0 +1,122 @@
+@import "./consts.scss";
+
+body {
+    font-family: $Manrope;
+    background: $Dark_blue;
+    color: $Light_cyan;
+}
+
+#root {
+    height: 100dvh;
+    width: 100dvw;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: $Dark_grayish_blue;
+    width: 475px;
+    min-height: 250px;
+    padding: 40px;
+    gap: 20px;
+    border-radius: 10px;
+    position: relative;
+
+    h6 {
+        color: $Neon_green;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: $Size;
+        text-align: center;
+        font-weight: $Bold;
+    }
+
+
+    .divider {
+        margin-bottom: 25px;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: -30px;
+        padding: 18px;
+        border: none;
+        border-radius: 50%;
+        background-color: $Neon_green;
+        transition: box-shadow 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 0 35px $Neon_green;
+        }
+    }
+
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: .75em;
+    font-weight: normal;
+
+    a {
+        color: $Neon_green;
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.rotateA {
+    animation: rotateRight .3s ease-in-out;
+}
+
+.rotateB {
+    animation: rotateLeft .3s ease-in-out;
+}
+
+@keyframes rotateRight {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotateLeft {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media screen and (max-width: $Mobile) {
+    .container {
+        width: auto;
+        padding: 0 20px;
+    }
+}
