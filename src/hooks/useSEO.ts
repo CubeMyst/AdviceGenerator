@@ -1,13 +1,15 @@
-import { useEffect } from "react"
+import { useEffect } from 'react'
 
 interface SEOProps {
-    title: string,
-    description?: string
+	title: string
+	description: string
 }
 
-export default function useSEO ({title, description}: SEOProps) {
-    useEffect(() => {
-        document.title = title
-        document.querySelector('meta[name="description"]')?.setAttribute('content', description ??= ''); 
-    }, [title, description])
+export default function useSEO({ title, description }: SEOProps) {
+	useEffect(() => {
+		document.title = title
+		document
+			.querySelector('meta[name="description"]')
+			?.setAttribute('content', (description))
+	}, [title, description])
 }
